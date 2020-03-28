@@ -1,5 +1,19 @@
 <template>
-  <div class="about">
-    <h1>Page1</h1>
+  <div>
+    <Header title="Page1"/>
+    <Main />
   </div>
 </template>
+
+<script>
+import Header from "../components/Header"
+import Main from "../components/Main"
+
+export default {
+  name: "Home",
+  components: {
+    Header,
+    Main
+  }
+};
+</script>

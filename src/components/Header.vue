@@ -1,6 +1,6 @@
 <template>
-  <div class="content">
-    <router-view />
+  <div class="header">
+    <h1>{{ title }}</h1>
   </div>
 </template>
 
@@ -8,15 +8,17 @@
 export default {
   name: "Navigation",
   props: {
-    msg: String
+    title: String
   }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.content {
-  background: red;
+.header {
+  background: pink;
   height: 200px;
+  padding: 20px;
+  margin-bottom: 10px;
 }
 </style>
